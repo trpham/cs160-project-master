@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Integrity Project</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Haotian Xu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Signup button -->
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; float:right; background-color:#333">Sign Up</button>
+    
+    <!-- Login button -->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float:right; background-color:#333">Login</button>
+    
+    <!-- Title -->
+    <div class="jumbotron" style="background:url(assets/images/cover.jpg); background-size:cover; background-position:0%25%; font-family:helvetic; color:white">
+      <h1>The Integrity Project</h1>
+      <h2>Integrity:</h2>
+      <p>noun. &nbsp the quality of being honest and having strong moral principles.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <!-- Search bar -->
+    <input type="text" name="search" placeholder="Search">
+    
+    <!-- Categories bar -->
+    <ul style="font-family:helvetica; background-color:#333">
+      <li><a href="">Current Events</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Categories</a>
+        <div class="dropdown-content" align="left">
+          <a class="category-nav">Category1</a>
+          <a class="category-nav">Category2</a>
+          <a class="category-nav">Category3</a>
+          <a class="category-nav">Category4</a>
+        </div>
+      </li>
+      <li><a href="">Recommended</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </div>
+  
+  <!-- Login modal -->
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+      <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Login</button>
+        <input type="checkbox" checked="checked"> Remember me
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Signup modal -->
+  <div id="id02" class="modal">
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      </div>
+      <div class="container">
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <input type="checkbox" checked="checked"> Remember me
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="container" id="articles-container" style="font:helvetica">
+  </div>
+
+  
+  <!-- Login JavaScript -->
+  <script>
+    var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  
+  <!-- Signup JavaScript -->
+  <script>
+    var modal = document.getElementById('id02');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

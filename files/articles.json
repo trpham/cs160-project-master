@@ -1,0 +1,104 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Title1",
+      "url": "https://google.com",
+      "source": "Source1",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image1",
+      "category": "Category1",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 2,
+      "title": "Title2",
+      "url": "https://google.com",
+      "source": "Source2",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image2",
+      "category": "Category1",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 3,
+      "title": "Title3",
+      "url": "https://google.com",
+      "source": "Source1",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image3",
+      "category": "Category1",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 4,
+      "title": "Title4",
+      "url": "https://google.com",
+      "source": "Source4",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image4",
+      "category": "Category4",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 5,
+      "title": "Title5",
+      "url": "https://google.com",
+      "source": "Source5",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image5",
+      "category": "Category1",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 6,
+      "title": "Title6",
+      "url": "https://google.com",
+      "source": "Source1",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image6",
+      "category": "Category2",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 7,
+      "title": "Title7",
+      "url": "https://google.com",
+      "source": "Source3",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image7",
+      "category": "Category3",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 8,
+      "title": "Title8",
+      "url": "https://google.com",
+      "source": "Source4",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image8",
+      "category": "Category3",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 9,
+      "title": "Title9",
+      "url": "https://google.com",
+      "source": "Source5",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image9",
+      "category": "Category4",
+      "date": "mm-dd-yyyy"
+    },
+    {
+      "id": 10,
+      "title": "Title10",
+      "url": "https://google.com",
+      "source": "Source2",
+      "content": "some text",
+      "imageURL": "http://placehold.it/500x500&text=image10",
+      "category": "Category1",
+      "date": "mm-dd-yyyy"
+    }
+  ]
+}

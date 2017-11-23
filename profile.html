@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Integrity - Politics</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Haotian Xu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#333">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html" style="color:white">The Integrity Project</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+          <!-- Categories bar -->
+          <ul style="font-family:helvetica; background-color:#333">
+            <li><a href="">Current Events</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Categories</a>
+              <div class="dropdown-content" align="left">
+                <a href="">Economy</a>
+                <a href="politics.html">Politics</a>
+                <a href="">Science & Technology</a>
+                <a href="">World</a>
+              </div>
+            </li>
+            <li><a href="">Recommended</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- <img src="assets/profilegraph.png" width="100%" title="Profile graphs"> -->
+  
+  <div class="container" style="font:helvetica">
+    <h1 align="center"><b>Profile</b></h1>
+    <p><br/></p>
+
+    <div class="row">
+      <div class="column">
+        <canvas id='catChart'></canvas>
+      </div>
+    </div>
+
+        <div class="row">
+      <div class="column">
+          <canvas id='lineChart'></canvas>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+          <canvas id='biasChart'></canvas>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <canvas id='doughChart'></canvas>
+      </div>
+    </div>
+
+<!--     <div class="row">
+      <div class="column">
+        <canvas id="lineChart"></canvas>
+      </div>
+      <div class="column">
+        <canvas id='doughChart'></canvas>
+      </div>
+    </div> -->
+
+  </div>
+  <p><br/></p>
+  <script src='js/profile.js'></script>
+</body>
+</html>
