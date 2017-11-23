@@ -81,7 +81,7 @@ $(document).ready(function() {
     selectedArticle = articles[selectedCategory][selectedArticleIndex]
     articlesRead.push(selectedArticle)
     // console.log(articlesRead)
-    console.log(calcuateBiasAverage(articlesRead, sources))
+    // console.log(calcuateBiasAverage(articlesRead, sources))
   });
 
 });
@@ -92,15 +92,12 @@ function calcuateBiasAverage(articlesRead, sources) {
   var sum = 0;
 
   if (articlesRead.length > 0) {
-
     articlesRead.forEach(function(article, index) {
-      var name = article.source
       sum += sources[article.source]
     });
-
     return (sum / articlesRead.length);
   }
-
+  
   return sum
 }
 
