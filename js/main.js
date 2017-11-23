@@ -61,7 +61,6 @@ $(document).ready(function() {
     // Append articles data
     $.each(articles[selectedCategory], function(index, article) {
       $("#articles-container").append(
-
         '<a class="article" href="' + article.url + '" target="_blank">' +
           '<div class="row">' +   
               '<p>' + article.title + '</p>' + 
@@ -97,7 +96,7 @@ function calcuateBiasAverage(articlesRead, sources) {
     });
     return (sum / articlesRead.length);
   }
-  
+
   return sum
 }
 
